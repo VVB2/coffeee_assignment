@@ -229,3 +229,36 @@ new_num = list(num for num,_ in itertools.groupby(num))
 print("New List", new_num)
 
 #Tuple
+
+x = (10, 20, 30, 40, 50)
+print(x)
+
+tuplex = ("tuple", False, 3.2, 1)
+print(tuplex)
+
+tuplex = 4, 8, 3 
+print(tuplex)
+n1, n2, n3 = tuplex
+print(n1 + n2 + n3) 
+
+tuplex = 2, 4, 5, 6, 2, 3, 4, 4, 7 
+print(tuplex)
+count = tuplex.count(4)
+print(count)
+
+tuplex = ("w", 3, "r", "e", "s", "o", "u", "r", "c", "e")
+print("r" in tuplex)
+print(5 in tuplex)
+
+listx = [5, 10, 7, 4, 15, 3]
+tuplex = tuple(listx)
+print(tuplex)
+
+listx.remove(5)
+tuplex = tuple(listx)
+print(tuplex)
+
+print(tuplex[:3])
+
+x = reversed(listx)
+print(tuple(x))
